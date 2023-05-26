@@ -89,7 +89,7 @@ var Eva = /** @class */ (function (_super) {
         return _this;
     }
     Eva.prototype.yourDates = function () {
-        return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.country);
+        return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my country is ").concat(this.country);
     };
     return Eva;
 }(Coders));

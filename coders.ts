@@ -29,7 +29,7 @@ class Ariel extends Coders {
     }
 };
 // Uso de la clase Ariel
-const ariel = new Ariel("Ariel", 25, "1994-04-26", "soccer");
+const ariel = new Ariel("Ariel", 25, "1994-04-26", "play soccer");
 ariel.yourDates()
 console.log(ariel.yourDates());
 
