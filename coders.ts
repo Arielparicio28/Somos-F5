@@ -2,6 +2,10 @@
 abstract class Coders{
     name:string
     age:number
+
+abstract class Coders {
+    name: string
+    age: number
     birthday: string
 /* El constructor de la clase Coders y se utiliza para inicializar las propiedades de la clase.
  Recibe tres parámetros: name (nombre), age (edad) y birthday (fecha de nacimiento). */
@@ -10,16 +14,18 @@ abstract class Coders{
         this.age = age;
         this.birthday = birthday;
     }
-   abstract yourDates():void
+    abstract yourDates(): void
 };
 /* Esto define una clase llamada Ariel que hereda de la clase abstracta Coders.
  La clase Ariel tiene una propiedad adicional llamada hobbies (aficiones). */
 class Ariel extends Coders {
+
+class Fede extends Coders {
     hobbies: string;
 
-     constructor(name: string, age: number, birthday: string, hobbies: string) {
+    constructor(name: string, age: number, birthday: string, hobbies: string) {
         super(name, age, birthday);
-        this.hobbies = hobbies; 
+        this.hobbies = hobbies;
     }
    /*  Este es el método yourDates en la clase Ariel. 
     Implementa el método abstracto heredado de la clase Coders. 
@@ -49,5 +55,12 @@ class Huilen extends Coders {
 // Uso de la clase Huilen
 const huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
 huilen.yourDates()
+    yourDates() {
+        return console.log(`My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my hobbie is ${this.hobbies}`);
+    }
+};
+// Uso de la clase Fede
+const fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
+fede.yourDates()
 
 

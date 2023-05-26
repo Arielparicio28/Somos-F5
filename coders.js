@@ -22,17 +22,19 @@ var Coders = /** @class */ (function () {
     return Coders;
 }());
 ;
-var Ariel = /** @class */ (function (_super) {
-    __extends(Ariel, _super);
-    function Ariel(name, age, birthday, hobbies) {
+var Fede = /** @class */ (function (_super) {
+    __extends(Fede, _super);
+    function Fede(name, age, birthday, hobbies) {
         var _this = _super.call(this, name, age, birthday) || this;
         _this.hobbies = hobbies;
         return _this;
     }
     Ariel.prototype.yourDates = function () {
         return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies);
+    Fede.prototype.yourDates = function () {
+        return console.log("My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies));
     };
-    return Ariel;
+    return Fede;
 }(Coders));
 ;
 // Uso de la clase Ariel
@@ -57,3 +59,6 @@ var Huilen = /** @class */ (function (_super) {
 // Uso de la clase Huilen
 var huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
 huilen.yourDates();
+// Uso de la clase Fede
+var fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
+fede.yourDates();
