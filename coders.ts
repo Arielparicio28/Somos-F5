@@ -31,5 +31,23 @@ class Ariel extends Coders {
 // Uso de la clase Ariel
 const ariel = new Ariel("Ariel", 25, "1994-04-26", "soccer");
 ariel.yourDates()
+
 console.log(ariel.yourDates());
+
+
+class Huilen extends Coders {
+    hobbies: string;
+
+     constructor(name: string, age: number, birthday: string, hobbies: string) {
+        super(name, age, birthday);
+        this.hobbies = hobbies; 
+    }
+    yourDates(){
+        return console.log(`My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my hobbie is ${this.hobbies}`);
+    }
+};
+// Uso de la clase Huilen
+const huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
+huilen.yourDates()
+
 
