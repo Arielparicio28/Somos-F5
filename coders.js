@@ -13,7 +13,15 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+//Define una clase abstracta llamada Coders
 var Coders = /** @class */ (function () {
+    function Coders() {
+    }
+    return Coders;
+}());
+var Coders = /** @class */ (function () {
+    /* El constructor de la clase Coders y se utiliza para inicializar las propiedades de la clase.
+     Recibe tres parámetros: name (nombre), age (edad) y birthday (fecha de nacimiento). */
     function Coders(name, age, birthday) {
         this.name = name;
         this.age = age;
@@ -22,27 +30,29 @@ var Coders = /** @class */ (function () {
     return Coders;
 }());
 ;
-var Fede = /** @class */ (function (_super) {
-    __extends(Fede, _super);
-    function Fede(name, age, birthday, hobbies) {
+/* Esto define una clase llamada Ariel que hereda de la clase abstracta Coders.
+ La clase Ariel tiene una propiedad adicional llamada hobbies (aficiones). */
+var Ariel = /** @class */ (function (_super) {
+    __extends(Ariel, _super);
+    function Ariel(name, age, birthday, hobbies) {
         var _this = _super.call(this, name, age, birthday) || this;
         _this.hobbies = hobbies;
         return _this;
     }
+    /*  Este es el método yourDates en la clase Ariel.
+     Implementa el método abstracto heredado de la clase Coders.
+     En este caso, el método imprime en la consola una texto que contiene la información de Ariel. */
     Ariel.prototype.yourDates = function () {
         return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies);
-    Fede.prototype.yourDates = function () {
-        return console.log("My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies));
     };
-    return Fede;
+    return Ariel;
 }(Coders));
 ;
 // Uso de la clase Ariel
 var ariel = new Ariel("Ariel", 25, "1994-04-26", "soccer");
 ariel.yourDates();
-
 console.log(ariel.yourDates());
-
+///Clase Huilen 
 var Huilen = /** @class */ (function (_super) {
     __extends(Huilen, _super);
     function Huilen(name, age, birthday, hobbies) {
@@ -56,9 +66,36 @@ var Huilen = /** @class */ (function (_super) {
     return Huilen;
 }(Coders));
 ;
-// Uso de la clase Huilen
 var huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
 huilen.yourDates();
-// Uso de la clase Fede
+// Clase Fede 
+var Fede = /** @class */ (function (_super) {
+    __extends(Fede, _super);
+    function Fede(name, age, birthday, hobbies) {
+        var _this = _super.call(this, name, age, birthday) || this;
+        _this.hobbies = hobbies;
+        return _this;
+    }
+    Fede.prototype.yourDates = function () {
+        return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies);
+    };
+    return Fede;
+}(Coders));
+;
 var fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
 fede.yourDates();
+var Eva = /** @class */ (function (_super) {
+    __extends(Eva, _super);
+    function Eva(name, age, birthday, country) {
+        var _this = _super.call(this, name, age, birthday) || this;
+        _this.country = country;
+        return _this;
+    }
+    Eva.prototype.yourDates = function () {
+        return console.log("My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my country is ").concat(this.country));
+    };
+    return Eva;
+}(Coders));
+;
+var eva = new Eva("Eva", 29, "1993-07-30", "Argentina");
+eva.yourDates();
