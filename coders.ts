@@ -69,6 +69,19 @@ class Fede extends Coders {
 const fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
 fede.yourDates()
 
+class Eva extends Coders {
+    country: string;
 
+     constructor(name: string, age: number, birthday: string, country: string) {
+        super(name, age, birthday);
+        this.country = country; 
+    }
+    yourDates(){
+        return console.log(`My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my country is ${this.country}`);
+    }
+};
+
+const eva = new Eva("Eva", 29, "1993-07-30", "Argentina");
+eva.yourDates()
 
 
