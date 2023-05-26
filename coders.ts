@@ -19,8 +19,6 @@ abstract class Coders {
 /* Esto define una clase llamada Ariel que hereda de la clase abstracta Coders.
  La clase Ariel tiene una propiedad adicional llamada hobbies (aficiones). */
 class Ariel extends Coders {
-
-class Fede extends Coders {
     hobbies: string;
 
     constructor(name: string, age: number, birthday: string, hobbies: string) {
@@ -37,10 +35,9 @@ class Fede extends Coders {
 // Uso de la clase Ariel
 const ariel = new Ariel("Ariel", 25, "1994-04-26", "soccer");
 ariel.yourDates()
-
 console.log(ariel.yourDates());
 
-
+///Clase Huilen 
 class Huilen extends Coders {
     hobbies: string;
 
@@ -52,15 +49,26 @@ class Huilen extends Coders {
         return console.log(`My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my hobbie is ${this.hobbies}`);
     }
 };
-// Uso de la clase Huilen
+
 const huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
 huilen.yourDates()
-    yourDates() {
-        return console.log(`My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my hobbie is ${this.hobbies}`);
+    
+// Clase Fede 
+class Fede extends Coders {
+    hobbies: string;
+
+    constructor(name: string, age: number, birthday: string, hobbies: string) {
+        super(name, age, birthday);
+        this.hobbies = hobbies;
+    }
+    yourDates():string{
+  return `My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my hobbie is ${this.hobbies}`;
     }
 };
-// Uso de la clase Fede
+
 const fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
 fede.yourDates()
+
+
 
 
