@@ -75,7 +75,7 @@ class Eva extends Coders {
         this.country = country; 
     }
     yourDates():string{
-        return `My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my hobbie is ${this.country}`;
+        return `My name is ${this.name} my age is ${this.age} my birthday is ${this.birthday} and my country is ${this.country}`;
           }
   };
 

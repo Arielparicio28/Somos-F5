@@ -63,6 +63,7 @@ var Huilen = /** @class */ (function (_super) {
 ;
 var huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
 huilen.yourDates();
+console.log(huilen.yourDates());
 // Clase Fede 
 var Fede = /** @class */ (function (_super) {
     __extends(Fede, _super);
@@ -79,6 +80,7 @@ var Fede = /** @class */ (function (_super) {
 ;
 var fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
 fede.yourDates();
+console.log(fede.yourDates());
 var Eva = /** @class */ (function (_super) {
     __extends(Eva, _super);
     function Eva(name, age, birthday, country) {
@@ -94,3 +96,4 @@ var Eva = /** @class */ (function (_super) {
 ;
 var eva = new Eva("Eva", 29, "1993-07-30", "Argentina");
 eva.yourDates();
+console.log(eva.yourDates());
