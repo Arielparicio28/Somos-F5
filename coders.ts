@@ -1,8 +1,4 @@
 //Define una clase abstracta llamada Coders
-abstract class Coders{
-    name:string
-    age:number
-
 abstract class Coders {
     name: string
     age: number
