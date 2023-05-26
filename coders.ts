@@ -48,6 +48,7 @@ class Huilen extends Coders {
 
 const huilen = new Huilen("Huilen", 36, "1987-01-29", "travel");
 huilen.yourDates()
+console.log(huilen.yourDates());
     
 // Clase Fede 
 class Fede extends Coders {
@@ -64,6 +65,7 @@ class Fede extends Coders {
 
 const fede = new Fede("Fede", 32, "1990-09-09", "go to the gym");
 fede.yourDates()
+console.log(fede.yourDates());
 
 class Eva extends Coders {
     country: string;
@@ -79,5 +81,5 @@ class Eva extends Coders {
 
 const eva = new Eva("Eva", 29, "1993-07-30", "Argentina");
 eva.yourDates()
-
+console.log(eva.yourDates());
 
