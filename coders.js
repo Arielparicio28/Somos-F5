@@ -15,11 +15,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 //Define una clase abstracta llamada Coders
 var Coders = /** @class */ (function () {
-    function Coders() {
-    }
-    return Coders;
-}());
-var Coders = /** @class */ (function () {
     /* El constructor de la clase Coders y se utiliza para inicializar las propiedades de la clase.
      Recibe tres parámetros: name (nombre), age (edad) y birthday (fecha de nacimiento). */
     function Coders(name, age, birthday) {
@@ -61,7 +56,7 @@ var Huilen = /** @class */ (function (_super) {
         return _this;
     }
     Huilen.prototype.yourDates = function () {
-        return console.log("My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies));
+        return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies);
     };
     return Huilen;
 }(Coders));
@@ -92,7 +87,7 @@ var Eva = /** @class */ (function (_super) {
         return _this;
     }
     Eva.prototype.yourDates = function () {
-        return console.log("My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my country is ").concat(this.country));
+        return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.country);
     };
     return Eva;
 }(Coders));
