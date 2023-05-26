@@ -30,7 +30,7 @@ var Ariel = /** @class */ (function (_super) {
         return _this;
     }
     Ariel.prototype.yourDates = function () {
-        return console.log("My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies));
+        return "My name is ".concat(this.name, " my age is ").concat(this.age, " my birthday is ").concat(this.birthday, " and my hobbie is ").concat(this.hobbies);
     };
     return Ariel;
 }(Coders));
@@ -38,3 +38,4 @@ var Ariel = /** @class */ (function (_super) {
 // Uso de la clase Ariel
 var ariel = new Ariel("Ariel", 25, "1994-04-26", "soccer");
 ariel.yourDates();
+console.log(ariel.yourDates());
