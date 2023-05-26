@@ -14,3 +14,5 @@ Notas:
 Instrucciones:
 -Clona el repositorio https://github.com/Arielparicio28/Somos-F5.git
 -Cree su propia rama ejemplo feature/perico
+
+Objetivo:
