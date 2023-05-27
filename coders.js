@@ -44,7 +44,7 @@ var Ariel = /** @class */ (function (_super) {
 }(Coders));
 ;
 // Uso de la clase Ariel
-var ariel = new Ariel("Ariel", 25, "1994-04-26", "soccer");
+var ariel = new Ariel("Ariel", 25, "1994-04-26", "play soccer");
 ariel.yourDates();
 console.log(ariel.yourDates());
 ///Clase Huilen 
