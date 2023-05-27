@@ -35,8 +35,11 @@ Antes de que puedas hacer el ejercicio te mostraremos cuál será nuestra clase 
 Esta clase aquella que nos permitirá agregar funciones sin necesidad de modificarla. El Prinicio Abierto/Cerrado nos permite trabajar con una clase que ya a pasado testing. 
 
 1- Clona el repositorio: https://github.com/Arielparicio28/Somos-F5.git
+
 2- Trabaja sobre su propia rama (ejemplo: feature/name)
+
 3- Decida que otro parametro quisiera pasar en esta clase: pais de origen, estado civil, dirección, entre otras. 
+
 4- En el siguiente ejemplo te mostraremos qué debes hacer: 
 
 Ariel decidió agregar a la clase Coder una nueva propiedad adicional llamada "hobbies", para ello debemos definir una nueva clase "class Ariel" pero esta debe ser una 
@@ -66,9 +69,12 @@ extención de Coders es por ello que usamos "extends Coders".
         console.log(ariel.yourDates());
 
 5- ¡Te animamos a que agregues tu clase!
+
 6- Para verificar que haz logrado generar una nueva clase escribí en tu consola el comando "tsc coders.ts", aquí lo que lograremos es que tu archivo de 
 TypeScrip sea compliado a JavaScript. 
+
 7- Luego escribí "node coders.js" y ¡Olé! Veras el resultado en tu consola. (¡Deberías poder leer la de todos los coders y la tuya! )
+
 8- Guarda y sube tu clase a la rama main para que toda la promoción 7 tenga tus datos
 
 ¡Ahora no hay motivos para no saber los cumpleaños de tus compis! 
